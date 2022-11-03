@@ -1,0 +1,12 @@
+function telephoneCheck(str) {
+  let number =  /^(1 |1)?((\d{3})|((\d{3})))(-| |)(\d{3})(-| |)(\d{4})$/;
+  let codigoarea = /^[1]*[\s]*[(]\d{3}[)][\s]*\d{3}[\s|-]*\d{4}$/;
+  if (!number.test(str)) {
+    return codigoarea.test(str);
+  } else {
+
+  return true;
+}
+}
+
+console.log(telephoneCheck("555-555-5555"));
